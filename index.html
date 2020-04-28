@@ -90,14 +90,16 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  //+ minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = "Uppskjuten på obestämd tid";
     document.title = document.getElementById("demo").innerHTML;
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "Nu är det GREEN DAY!";
+    document.getElementById("demo").innerHTML = "Uppskjutet ):";
     document.title = "Nu är det GREEN DAY!";
   }
 }, 1000);
