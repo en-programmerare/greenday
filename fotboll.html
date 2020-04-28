@@ -46,14 +46,16 @@ var x = setInterval(function() {
     
   //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   //+ minutes + "m " + seconds + "s ";
-  document.getElementById("demo").innerHTML = "Inställt";
+  document.getElementById("demo").innerHTML = "Uppskjutet på obestämd tid";
     document.title = document.getElementById("demo").innerHTML;
     
   // Nedräkning klar
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "Nu är det FINAL!";
+    document.getElementById("demo").innerHTML = "Uppskjutet på obestämd tid";
     document.title = "Nu är det FINAL";
+    document.title = "Uppskjutet";
   }
 }, 1000);
 </script>
